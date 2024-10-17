@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осенний Бал 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="overlay"></div>
+            <div class="header-content">
+                <h1>Осенний Бал</h1>
+                <p>Маскарадная вечеринка для 9-10-11 классов</p>
+                <div class="mask-animation">
+                    <img src="./mask.png" alt="Маска" class="mask-img">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="event-details">
+                <h2>Подробности мероприятия</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="icon">📅</span>
+                        <p><strong>Дата:</strong> 24 октября 2024</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">⏰</span>
+                        <p><strong>Время:</strong> 13:00</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p><strong>Место:</strong> Актовый зал</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🎭</span>
+                        <p><strong>Дресс-код:</strong> Формальная одежда и маски</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vote-section">
+                <h2>Голосование за Короля и Королеву Бала</h2>
+                <form id="vote-form" action="https://formspree.io/f/xldeezgo"
+                method="POST">
+                    <label for="couple">Выберите пару (Король и Королева):</label>
+                    <input type="text" id="couple" name="couple" placeholder="Введите имена" required>
+
+                    <button type="submit">Отправить голос</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Подписывайтесь на нас в <a href="https://instagram.com/146_events" target="_blank">Instagram</a></p>
+        </footer>
+    </div>
+</body>
+</html>
